@@ -19,20 +19,6 @@ In the given table, non-prime attribute TEACHER_AGE is dependent on TEACHER_ID w
 
 To convert the given table into 2NF, we decompose it into two tables:
 
-Video Player is loading.
-
-Current TimeÂ 0:00
-
-DurationÂ 0:00
-
-Loaded: 0%
-
-Stream TypeÂ LIVE
-
-Remaining TimeÂ 0:00
-
-Â
-
 **TEACHER_DETAIL table:**
 
 | TEACHER_ID | TEACHER_AGE |

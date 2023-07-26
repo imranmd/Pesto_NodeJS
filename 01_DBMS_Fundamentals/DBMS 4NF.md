@@ -21,20 +21,6 @@ In the STUDENT relation, a student with STU_ID, **21** contains two courses, **C
 
 So to make the above table into 4NF, we can decompose it into two tables:
 
-Video Player is loading.
-
-Current TimeÂ 0:00
-
-DurationÂ 0:00
-
-Loaded: 0%
-
-Stream TypeÂ LIVE
-
-Remaining TimeÂ 0:00
-
-Â
-
 **STUDENT_COURSE**
 
 | STU_ID | COURSE    |
