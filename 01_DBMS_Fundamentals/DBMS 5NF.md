@@ -1,20 +1,18 @@
-[next →](https://www.javatpoint.com/dbms-relational-decomposition) [← prev](https://www.javatpoint.com/dbms-forth-normal-form)
-
 ## Fifth normal form (5NF)
 
--   A relation is in 5NF if it is in 4NF and not contains any join dependency and joining should be lossless.
--   5NF is satisfied when all the tables are broken into as many tables as possible in order to avoid redundancy.
--   5NF is also known as Project-join normal form (PJ/NF).
+- A relation is in 5NF if it is in 4NF and not contains any join dependency and joining should be lossless.
+- 5NF is satisfied when all the tables are broken into as many tables as possible in order to avoid redundancy.
+- 5NF is also known as Project-join normal form (PJ/NF).
 
 ### Example
 
-| SUBJECT | LECTURER | SEMESTER |
-| --- | --- | --- |
-| Computer | Anshika | Semester 1 |
-| Computer | John | Semester 1 |
-| Math | John | Semester 1 |
-| Math | Akash | Semester 2 |
-| Chemistry | Praveen | Semester 1 |
+| SUBJECT   | LECTURER | SEMESTER   |
+| --------- | -------- | ---------- |
+| Computer  | Anshika  | Semester 1 |
+| Computer  | John     | Semester 1 |
+| Math      | John     | Semester 1 |
+| Math      | Akash    | Semester 2 |
+| Chemistry | Praveen  | Semester 1 |
 
 In the above table, John takes both Computer and Math class for Semester 1 but he doesn't take Math class for Semester 2. In this case, combination of all these fields required to identify a valid data.
 
@@ -24,59 +22,29 @@ So to make the above table into 5NF, we can decompose it into three relations P1
 
 **P1**
 
-| SEMESTER | SUBJECT |
-| --- | --- |
-| Semester 1 | Computer |
-| Semester 1 | Math |
+| SEMESTER   | SUBJECT   |
+| ---------- | --------- |
+| Semester 1 | Computer  |
+| Semester 1 | Math      |
 | Semester 1 | Chemistry |
-| Semester 2 | Math |
+| Semester 2 | Math      |
 
 **P2**
 
-| SUBJECT | LECTURER |
-| --- | --- |
-| Computer | Anshika |
-| Computer | John |
-| Math | John |
-| Math | Akash |
-| Chemistry | Praveen |
+| SUBJECT   | LECTURER |
+| --------- | -------- |
+| Computer  | Anshika  |
+| Computer  | John     |
+| Math      | John     |
+| Math      | Akash    |
+| Chemistry | Praveen  |
 
 **P3**
 
-| SEMSTER | LECTURER |
-| --- | --- |
-| Semester 1 | Anshika |
-| Semester 1 | John |
-| Semester 1 | John |
-| Semester 2 | Akash |
-| Semester 1 | Praveen |
-
-  
-
-Next Topic[DBMS Relational Decomposition](https://www.javatpoint.com/dbms-relational-decomposition)
-
-[← prev](https://www.javatpoint.com/dbms-forth-normal-form) [next →](https://www.javatpoint.com/dbms-relational-decomposition)
-
-___
-
-![Youtube](https://static.javatpoint.com/images/youtube-32.png) For Videos Join Our Youtube Channel: [Join Now](https://bit.ly/2FOeX6S)
-
-___
-
-### Feedback
-
--   Send your Feedback to feedback@javatpoint.com
-
-___
-
-## Help Others, Please Share
-
-[![facebook](https://www.javatpoint.com/images/facebook32.png)](https://www.facebook.com/sharer.php?u=https://www.javatpoint.com/dbms-fifth-normal-form "Facebook") [![twitter](https://www.javatpoint.com/images/twitter32.png)](https://twitter.com/share?url=https://www.javatpoint.com/dbms-fifth-normal-form "Twitter") [![pinterest](https://www.javatpoint.com/images/pinterest32.png)](https://www.pinterest.com/pin/create/button/?url=https://www.javatpoint.com/dbms-fifth-normal-form "Pinterest")
-
-___
-
-___
-
-___
-
-___
+| SEMSTER    | LECTURER |
+| ---------- | -------- |
+| Semester 1 | Anshika  |
+| Semester 1 | John     |
+| Semester 1 | John     |
+| Semester 2 | Akash    |
+| Semester 1 | Praveen  |
