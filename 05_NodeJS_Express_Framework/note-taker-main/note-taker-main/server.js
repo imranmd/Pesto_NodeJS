@@ -76,3 +76,19 @@ app.get('*', (req, res) => {
 //App listens with front end on this port
 app.listen(PORT, () =>
     console.log(`App listening on ${PORT}`))
+
+
+    
+// Route with query parameters
+app.get('/search', (req, res) => {
+  // Extract the query parameters from the request object
+  const searchTerm = req.query.q;
+  const filters = req.query.filters;
+  
+  // Process the search and filter the results accordingly
+  // For demonstration purposes, we'll just send back the parameters as JSON.
+  res.json({ searchTerm, filters });
+});
+
+// Example usage: http://localhost:3000/search?q=apple&filters=price_low,category_fruits
+
