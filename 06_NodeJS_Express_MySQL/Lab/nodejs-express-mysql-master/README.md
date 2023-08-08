@@ -38,7 +38,7 @@ Finally, we’re gonna test the Rest Apis using Postman.
 
 Our project structure will be like:
 
-![nodejs-rest-api-express-mysql-project-structure-new](https://www.bezkoder.com/wp-content/uploads/2019/09/nodejs-rest-api-express-mysql-project-structure-new.png)
+![nodejs-rest-api-express-mysql-project-structure-new](./assets/nodejs-rest-api-express-mysql-project-structure-new.png)
 
 ## Create Node.js application
 
@@ -147,9 +147,7 @@ app.listen(PORT, () => {
 – listen on port 8080 for incoming requests.
 
 Now let’s run the app with command: `node server.js`.  
-Open your browser with url [http://localhost:8080/](http://localhost:8080/), you will see:
-
-![nodejs-rest-api-express-mysql-setup-server](https://www.bezkoder.com/wp-content/uploads/2019/09/nodejs-rest-api-express-mysql-setup-server.png)
+Open your browser with url [http://localhost:8080/](http://localhost:8080/)
 
 ## Create MySQL table
 
@@ -633,7 +631,7 @@ Using Postman, we’re gonna test all the Apis above.
 **-   Create a new Tutorial using `POST /tutorials` Api**
 
   
-![nodejs-rest-api-express-mysql-create-tutorial](https://www.bezkoder.com/wp-content/uploads/2019/09/nodejs-rest-api-express-mysql-create-tutorial.png)
+![nodejs-rest-api-express-mysql-create-tutorial](./assets/nodejs-rest-api-express-mysql-create-tutorial.png)
 
 After creating some new Tutorials, we can check MySQL table:
 
@@ -653,17 +651,14 @@ mysql> SELECT * FROM tutorials;
 **-   Retrieve all Tutorials using `GET /tutorials` Api**
 
   
-![nodejs-rest-api-express-mysql-retrieve-tutorial](https://www.bezkoder.com/wp-content/uploads/2019/09/nodejs-rest-api-express-mysql-retrieve-tutorial.png)
+![nodejs-rest-api-express-mysql-retrieve-tutorial](./assets/nodejs-rest-api-express-mysql-retrieve-tutorial.png)
 
 **-   Retrieve a single Tutorial by id using `GET /tutorials/:id` Api**
 
   
-![nodejs-rest-api-express-mysql-retrieve-one-tutorial](https://www.bezkoder.com/wp-content/uploads/2019/09/nodejs-rest-api-express-mysql-retrieve-one-tutorial.png)
+![nodejs-rest-api-express-mysql-retrieve-one-tutorial](./assets/nodejs-rest-api-express-mysql-retrieve-one-tutorial.png)
 
 **-   Update a Tutorial using `PUT /tutorials/:id` Api**
-
-  
-![nodejs-rest-api-express-mysql-update-tutorial](https://www.bezkoder.com/wp-content/uploads/2019/09/nodejs-rest-api-express-mysql-update-tutorial.png)
 
 Check `tutorials` table after some rows are updated:
 
@@ -683,17 +678,17 @@ mysql> SELECT * FROM tutorials;
 **-   Find Tutorials by title using `GET /tutorials` Api**
 
   
-![nodejs-rest-api-express-mysql-search-tutorial](https://www.bezkoder.com/wp-content/uploads/2019/09/nodejs-rest-api-express-mysql-search-tutorial.png)
+![nodejs-rest-api-express-mysql-search-tutorial](./assets/nodejs-rest-api-express-mysql-search-tutorial.png)
 
 **-   Find all published Tutorials**
 
   
-![nodejs-rest-api-express-mysql-find-tutorial](https://www.bezkoder.com/wp-content/uploads/2019/09/nodejs-rest-api-express-mysql-find-tutorial.png)
+![nodejs-rest-api-express-mysql-find-tutorial](./assets/nodejs-rest-api-express-mysql-find-tutorial.png)
 
 **-   Delete a Tutorial using `DELETE /tutorials/:id` Api**
 
   
-![nodejs-rest-api-express-mysql-delete-id-tutorial](https://www.bezkoder.com/wp-content/uploads/2019/09/nodejs-rest-api-express-mysql-delete-id-tutorial.png)
+![nodejs-rest-api-express-mysql-delete-id-tutorial](./assets/nodejs-rest-api-express-mysql-delete-id-tutorial.png)
 
 Tutorial with id=4 was removed from `tutorials` table:
 
@@ -712,7 +707,7 @@ mysql> SELECT * FROM tutorials;
 **-   Delete all Tutorials using `DELETE /tutorials` Api**
 
   
-![nodejs-rest-api-express-mysql-delete-tutorial](https://www.bezkoder.com/wp-content/uploads/2019/09/nodejs-rest-api-express-mysql-delete-tutorial.png)
+![nodejs-rest-api-express-mysql-delete-tutorial](./assets/nodejs-rest-api-express-mysql-delete-tutorial.png)
 
 Now there are no rows in `tutorials` table:
 
