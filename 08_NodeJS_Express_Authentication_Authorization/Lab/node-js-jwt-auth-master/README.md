@@ -19,10 +19,6 @@ In this tutorial, we’re gonna build a Node.js Express Rest API example that su
 -   Way to use Sequelize to interact with MySQL Database
 
 ___
-
-– [Node Express + React](https://www.bezkoder.com/react-express-authentication-jwt/)
-
-
 Comparing with Session-based Authentication that need to store Session on Cookie, the big advantage of Token-based Authentication is that we store the JSON Web Token (JWT) on Client side: Local Storage for Browser, Keychain for IOS and SharedPreferences for Android… So we don’t need to build another backend project that supports Native Apps or an additional Authentication module for Native App users.
 
 ![in-depth-introduction-jwt-token-based-authentication](assets/in-depth-introduction-jwt-token-based-authentication.png)
